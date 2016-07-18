@@ -1,0 +1,7 @@
+name: tomreeb-web
+  image: nginx
+  volumes:
+   - ~/v5:/usr/share/nginx/html:ro
+  ports:
+   - "8080:80""
+   
