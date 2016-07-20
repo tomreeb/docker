@@ -1,6 +1,8 @@
 # Simple Dockerfile to run my website in a container
 # to run: docker run -d --name tomreeb-web -p 8080:80 
-FROM nginx
+FROM tomreeb/nginx
+
+MAINTAINER Tom Reeb <tom@reeb.me>
 
 WORKDIR /usr/share/nginx/
 
