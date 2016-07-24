@@ -8,7 +8,7 @@ dns-server:
     - "10000:10000"
 
 dhcp-server:
-  image:networkboot/dhcpd:latest
+  image: networkboot/dhcpd:latest
   net: host
   volumes: 
     - /docker/dhcpd:/data
