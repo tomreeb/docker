@@ -1,18 +1,3 @@
-dns-server:
-  image: sameersbn/bind:latest
-  net: host
-  volumes:
-    - /docker/bind:/data
-  ports:
-    - "53:53"
-    - "10000:10000"
-
-dhcp-server:
-  image: networkboot/dhcpd:latest
-  net: host
-  volumes: 
-    - /docker/dhcpd:/data
-
 unifi-controller:
   image: jacobalberty/unifi:latest
   net: host
