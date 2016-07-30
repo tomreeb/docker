@@ -2,6 +2,9 @@
 ssh-authorized-keys: 
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCFKCN/H3KokB3iWODdw71RJ1m+rX8QOj1BbAJ8OGO12IqDcX+Ppc9x391+/4UEMOs0Bqt7FS5JNcFMPwiXtXvudoyleVFBO1cR2b9oQEcvTgu9S04fBs1QyJ1DVNbUflaEpkjcQuSzit2g/SuIl2zUpjozF1UOIeDsZ9lQtorYb7T3JADF5nJJvr3Vj/Waqqg0KcW41ychjncbUYKK0dhMePVP6zkm4yZh4ZvBz7HdVJcAoGuF6kzTnX8iDkI0Y02knmUcAbs72UJAgeERekYOG7m7rA310d/aQhZwG05nTvxJ6HxYOthBKsiLO612Hz5x8IrHjfBCSJMV47JrLzf treeb@coriell.org
 coreos:
+  locksmith:
+    window-start: Sun 04:00
+    window-length: 1h
   etcd2:
     # generate a new token for each unique cluster from https://discovery.etcd.io/new?size=3
     # specify the initial size of your cluster with ?size=X
