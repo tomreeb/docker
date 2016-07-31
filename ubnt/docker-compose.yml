@@ -1,5 +1,5 @@
 unifi-controller:
-  image: jacobalberty/unifi:latest
+  image: jacobalberty/unifi:stable
   net: host
   volumes:
     - /docker/unifi/lib:/var/lib/unifi
