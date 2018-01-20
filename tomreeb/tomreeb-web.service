@@ -1,0 +1,18 @@
+[Unit]
+Description=Tomreeb.com Web Container
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+Restart=always
+ExecStartPre=/usr/bin/docker pull tomreeb/web
+ExecStart=/usr/bin/docker run \
+  --name tomreeb-web \
+  -p 8081:80 \
+  tomreeb/web:latest
+ExecStop=/usr/bin/docker stop tomreeb-web
+ExecStopPost=/usr/bin/docker rm tomreeb-web
+
+[Install]
+WantedBy=multi-user.target
